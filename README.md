@@ -52,3 +52,5 @@ things i wanted to do if i gave myself more time:
 - id probably fix the header bar so it didnt scroll with the page, i think its handy to always be able to reach it.
 - Id also create a better git workflow - apparently it isnt like riding a bike and i was having trouble remembering the flow of it again and the commands (i feel like i could have easily spent a day or so getting use to this again). so thats also something i have put aside as i didnt want to spend a crazy amount of time on this.
 but if i had used it properly i probably would have branched off for each piece of work e.g sideBar, header, content area. and then maybe each block in the respective areas. i feel like those would have been good places to checkin.
+
+(theres another contributor on my project cause i cloned a sass stater boilerplate to begin with. i hope that is ok, its how iv started every project iv worked on) 
