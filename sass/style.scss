@@ -3,4 +3,134 @@
 
 // Reset
 @import "normalize";
-@import "base";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $didot-font;
+}
+
+//main body content
+.content{
+  background-color: $content-background;
+  height: 100vh;
+  max-width: 1000px;
+}
+
+div.content-header {
+  text-align: center;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+// content images to be reactive.
+.content-img img {
+  width: 100%;
+  height: auto;
+  max-width: 25vw;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+//top bar header (contains search)
+.header{
+  background-color: $header-background;
+  height: 100px;
+}
+
+.header input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.search-container{
+  float: right;
+
+}
+
+.header .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: $header-background;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.header .search-container button:hover {
+  background: #f66d1c;
+}
+
+//Right hand sidebar
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 80px;
+  left: 0;
+  background-color: $sidebar-background;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+}
+
+.sidenav a:hover:not(.active) {
+  text-decoration: underline;
+}
+
+.sidenav a.active {
+  text-decoration: underline;
+}
